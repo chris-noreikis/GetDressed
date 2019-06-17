@@ -1,4 +1,4 @@
-import dressCommandFactory from './factory';
+import dressCommandFactory from './dressCommandFactory';
 import Person from "./person";
 import readStdIn from "./stdInReader";
 

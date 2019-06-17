@@ -1,4 +1,4 @@
-import dressCommandFactory from "./factory";
+import dressCommandFactory from "./dressCommandFactory";
 import constants from "./constants";
 
 describe('Dress Command Factory', () => {
