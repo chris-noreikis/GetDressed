@@ -3,17 +3,10 @@ import Person from "./person";
 import readStdIn from "./stdInReader";
 
 export default () => {
-  // Call function and assign to variable
   let inputCommands = readStdIn();
-  
-  // Call other function and assign that to variable too
-  let clothesLabels = parseCommandsIntoLabels(inputCommands);
-  
-  // Call third function, get the result, and then, assign to variable
-  clothesLabels = addFailLabelIfLeaveMissing(clothesLabels);
-  
-  // Return variable
-  return clothesLabels;
+  return addFailLabelIfLeaveMissing(
+    parseCommandsIntoLabels(inputCommands)
+  );
 };
 
 function parseCommandsIntoLabels(inputCommands) {
